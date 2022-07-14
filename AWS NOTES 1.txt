@@ -1,0 +1,64 @@
+[mohan@linux ~]$
+
+mohan - username
+@linux - hostname
+~ - current file path
+$ - normal user
+# - root user
+
+# sudo -i => login as a root user
+# pwd     => Present working directory
+# sudo    => super user do 
+# clear   => Clear the screen
+# cd <path> => change directory
+
+File creation / Directory creation:-
+cat
+vim
+vi
+touch
+echo
+rm
+mv <source> <dest>
+mkdir
+rmdir  => without data delete 
+rm -rf => with data delete
+
+user creation / Deletion :-
+useradd 
+userdel
+usermod
+
+group creation / Deletion :-
+groupadd
+groupdel
+groupmod
+
+file permission:-
+-rw-r--r--. 1 root root     1 Apr 20 11:43 filename3
+
+- => file/directory
+rw- => userpermission
+r-- => grouppermission
+r-- => others permission
+
+read -> r
+write -> w
+execute -> x
+
+numeric method
+read =>r => 4
+write => w => 2
+execute => x => 1
+
+chmod 744 filename3
+
+symbolic method
++ -
+u+rwx    u-x  
+g+r      g-
+o+r      o-
+
+chmod u+rwx g+r o+r filename4
+chmod
+chown
